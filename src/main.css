@@ -1,0 +1,225 @@
+@import url("https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap");
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 15px;
+}
+
+.wrapper {
+  max-width: 1124px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.h1 {
+  font-family: 'Josefin Sans', sans-serif;
+  text-transform: uppercase !important;
+  font-size: 60px;
+  font-weight: 300;
+  color: white;
+}
+
+.h2 {
+  font-family: 'Josefin Sans', sans-serif;
+  text-transform: uppercase !important;
+  font-size: 40px;
+  font-weight: 300;
+}
+
+.h3 {
+  font-family: 'Josefin Sans', sans-serif;
+  text-transform: uppercase !important;
+  font-size: 30px;
+  font-weight: 300;
+  color: white;
+}
+
+p {
+  font-size: 15px;
+}
+
+.button {
+  padding: 10px 40px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color: black;
+  text-decoration: none;
+  border: 2px solid black;
+  font-weight: bold;
+}
+
+header {
+  background-image: url(../images/desktop/image-hero.jpg);
+  background-size: cover;
+  background-position: center center;
+  min-height: 650px;
+}
+
+header .navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 60px 0;
+}
+
+header .navigation nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+  gap: 33px;
+}
+
+header .navigation nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+header .hero-text {
+  border: 2px solid white;
+  max-width: 650px;
+  padding: 37px;
+  margin-top: 67px;
+}
+
+.vr-intro {
+  padding: 160px 0;
+}
+
+.vr-intro--container {
+  position: relative;
+}
+
+.vr-intro--image img {
+  max-width: 100%;
+}
+
+.vr-intro--text {
+  max-width: 560px;
+  background-color: white;
+  padding-top: 70px;
+  padding-left: 70px;
+  padding-bottom: 20px;
+  padding-right: 20px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.creation {
+  padding-bottom: 80px;
+}
+
+.creation--title-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 80px;
+}
+
+.creation--item {
+  min-height: 446px;
+  padding: 44px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.creation--container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.creation--col {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 calc(100% / 12 * 3);
+          flex: 1 1 calc(100% / 12 * 3);
+  max-width: calc(100% / 12 * 3);
+  padding: 15px;
+}
+
+.footer {
+  background-color: black;
+  padding: 40px 0;
+}
+
+.footer > * {
+  color: white;
+}
+
+.footer--upper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 30px;
+}
+
+.footer--upper_icons a {
+  margin-left: 15px;
+}
+
+.footer--under {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer--under_links ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+.footer--under_links ul li {
+  margin-right: 30px;
+}
+
+.footer--under_links ul li a {
+  text-decoration: none;
+  color: white;
+}
+/*# sourceMappingURL=main.css.map */
