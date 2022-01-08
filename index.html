@@ -12,8 +12,8 @@
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; padding: 2rem;}
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution { font-size: 13px; text-align: center; padding: 2rem;}
+    .attribution a { color: hsl(228, 45%, 44%); font-size: 13px;}
   </style>
 </head>
 <body>
@@ -23,18 +23,22 @@
     <header>
      <div class="wrapper">
        <div class="navigation">
+
         <div class="logo">
           <img src="/images/logo.svg" alt="Loopstudios">
         </div>
+
         <nav>
-          <ul>
+          <span><img src="images/icon-hamburger.svg" alt="button-menu"></span>
+          <ul class="primary-menu">
             <li><a href="">About</a></li>
             <li><a href="">Careers</a></li>
             <li><a href="">Events</a></li>
-            <li><a href="">Products</a></li>
+            <li class="active"><a href="">Products</a></li>
             <li><a href="">Support</a></li>
           </ul>
         </nav>
+
        </div>
        <div class="hero-text">
          <h1 class="h1">immersive experiences that deliver</h1>
@@ -67,51 +71,78 @@
       <div class="wrapper">
         <div class="creation--title-container">
           <h2 class="h2">Our creations</h2>
-          <div class="cta">
+          <div>
             <a href="" class="button">See all</a>
           </div>
         </div>
         <div class="creation--container">
           <div class="creation--col">
-             <div class="creation--item" style="background-image: url(/images/desktop/image-deep-earth.jpg);">
+            <a href="#">
+              <div class="creation--overlay"></div>
+              <div class="creation--item" style="background-image: url(/images/desktop/image-deep-earth.jpg);">
                 <h3 class="h3">Deep earth</h3>
              </div>
+            </a>
           </div>
           <div class="creation--col">
+            <a href="#">
+             <div class="creation--overlay"></div>
              <div class="creation--item" style="background-image: url(/images/desktop/image-night-arcade.jpg);">
                 <h3 class="h3">Night Arcade</h3>
              </div>
+            </a>
           </div>
           <div class="creation--col">
+            <a href="#">
+             <div class="creation--overlay"></div>
              <div class="creation--item" style="background-image: url(/images/desktop/image-soccer-team.jpg)">
                 <h3 class="h3">Soccer team VR</h3>
              </div>
+            </a>
           </div>
           <div class="creation--col">
+            <a href="#">
+             <div class="creation--overlay"></div>
              <div class="creation--item" style="background-image: url(/images/desktop/image-grid.jpg)">
                 <h3 class="h3">The grid</h3>
              </div>
+            </a>
           </div>
           <div class="creation--col">
+            <a href="#">
+             <div class="creation--overlay"></div>
              <div class="creation--item" style="background-image: url(/images/desktop/image-from-above.jpg)">
                 <h3 class="h3">From up above VR</h3>
              </div>
+            </a>
           </div>
           <div class="creation--col">
+            <a href="#">
+             <div class="creation--overlay"></div>
              <div class="creation--item" style="background-image: url(/images/desktop/image-pocket-borealis.jpg)">
                 <h3 class="h3">Pocket borealis</h3>
              </div>
+            </a>
           </div>
           <div class="creation--col">
+            <a href="#">
+             <div class="creation--overlay"></div>
              <div class="creation--item" style="background-image: url(/images/desktop/image-curiosity.jpg)">
                 <h3 class="h3">The curiosity</h3>
              </div>
+            </a>
           </div>
           <div class="creation--col">
+            <a href="#">
+            <div class="creation--overlay"></div>
             <div class="creation--item" style="background-image: url(/images/desktop/image-fisheye.jpg)">
                <h3 class="h3">Make it fisheye</h3>
             </div>
+          </a>
          </div>
+       </div>
+       <div class="cta">
+        <a href="" class="button show-for-mobile">See all</a>
        </div>
       </div>
     </section>
@@ -125,15 +156,13 @@
         <div class="footer--upper_logo">
          <img src="images/logo.svg" alt="logo">
         </div>
-        <div class="footer--upper_icons">
+        <div class="footer--upper_icons hide-for-mobile">
           <a href=""><img src="images/icon-facebook.svg" alt=""></a>
           <a href=""><img src="images/icon-instagram.svg" alt=""></a>
           <a href=""><img src="images/icon-twitter.svg" alt=""></a>
           <a href=""><img src="images/icon-pinterest.svg" alt=""></a>
         </div>
-      </div>
-      <div class="footer--under">
-        <div class="footer--under_links">
+        <div class="footer--under_links show-for-mobile">
           <ul>
             <li><a href="">About</a></li>
             <li><a href="">Careers</a></li>
@@ -141,6 +170,23 @@
             <li><a href="">Products</a></li>
             <li><a href="">Support</a></li>
           </ul>
+        </div>
+      </div>
+      <div class="footer--under">
+        <div class="footer--under_links hide-for-mobile">
+          <ul>
+            <li><a href="">About</a></li>
+            <li><a href="">Careers</a></li>
+            <li><a href="">Events</a></li>
+            <li><a href="">Products</a></li>
+            <li><a href="">Support</a></li>
+          </ul>
+        </div>
+        <div class="footer--upper_icons show-for-mobile">
+          <a href=""><img src="images/icon-facebook.svg" alt=""></a>
+          <a href=""><img src="images/icon-instagram.svg" alt=""></a>
+          <a href=""><img src="images/icon-twitter.svg" alt=""></a>
+          <a href=""><img src="images/icon-pinterest.svg" alt=""></a>
         </div>
         <div class="footer--under_rights">
           © 2021 Loopstudios. All rights reserved.
