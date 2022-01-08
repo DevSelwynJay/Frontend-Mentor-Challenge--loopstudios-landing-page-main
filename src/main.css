@@ -191,6 +191,7 @@ header .hero-text {
 @media (max-width: 375px) {
   header .hero-text {
     padding: 20px;
+    margin-top: 71px;
   }
 }
 
