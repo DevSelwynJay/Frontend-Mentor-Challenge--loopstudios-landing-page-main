@@ -233,7 +233,7 @@ header .hero-text {
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 500px) {
   .vr-intro--text {
     padding: 20px;
   }
