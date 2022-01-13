@@ -29,7 +29,26 @@
         </div>
 
         <nav>
-          <span><img src="images/icon-hamburger.svg" alt="button-menu"></span>
+          <span id="mobile-menubtn"><img src="images/icon-hamburger.svg" alt="button-menu"></span>
+
+          <div class="mobile-menu-container" id="mobile-menu">
+            <div class="mobile-menu-header">
+              <div class="mobile-menu-logo">
+                <img src="/images/logo.svg" alt="Loopstudios">
+              </div>
+              <div class="mobile-menu-closebtn">
+                <span id="mobile-closebtn"><img src="images/icon-close.svg" alt="close-button"></span>
+              </div>
+            </div>
+            <ul class="mobile-menu">
+              <li><a href="">About</a></li>
+              <li><a href="">Careers</a></li>
+              <li><a href="">Events</a></li>
+              <li class="active"><a href="">Products</a></li>
+              <li><a href="">Support</a></li>
+            </ul>
+          </div>
+
           <ul class="primary-menu">
             <li><a href="">About</a></li>
             <li><a href="">Careers</a></li>
@@ -201,6 +220,19 @@
     Coded by <a href="#">Jay</a>.
   </div>
 
+  <script>
+    const mobilemenu = document.querySelector('#mobile-menubtn');
+    const mobileclose = document.querySelector('#mobile-closebtn');
+    const menu = document.querySelector('#mobile-menu');
+
+    mobilemenu.addEventListener('click',function(){
+    menu.classList.add('open');
+    });
+    mobileclose.addEventListener('click',function(){
+    menu.classList.remove('open');
+    });
+
+  </script>
 
 </body>
 </html>

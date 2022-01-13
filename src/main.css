@@ -123,7 +123,7 @@ header .navigation {
   }
 }
 
-header .navigation nav ul {
+header .navigation nav .primary-menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -134,13 +134,13 @@ header .navigation nav ul {
   gap: 33px;
 }
 
-header .navigation nav ul li a {
+header .navigation nav .primary-menu li a {
   text-decoration: none;
   color: white;
   position: relative;
 }
 
-header .navigation nav ul li a::after {
+header .navigation nav .primary-menu li a::after {
   content: "";
   height: 2px;
   width: 60%;
@@ -156,12 +156,58 @@ header .navigation nav ul li a::after {
   transition: 400ms ease;
 }
 
-header .navigation nav ul .active a::after {
+header .navigation nav .primary-menu .active a::after {
   opacity: 1;
 }
 
-header .navigation nav ul li a:hover::after, header .navigation nav ul li a:focus::after {
+header .navigation nav .primary-menu li a:hover::after, header .navigation nav .primary-menu li a:focus::after {
   opacity: 1;
+}
+
+header .navigation nav .open {
+  display: block !important;
+}
+
+header .navigation nav .mobile-menu-container {
+  background-color: black;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 30px;
+  display: none;
+}
+
+header .navigation nav .mobile-menu-container .mobile-menu {
+  margin-top: 100px;
+}
+
+header .navigation nav .mobile-menu-container .mobile-menu li {
+  list-style: none;
+  margin: 15px 0;
+}
+
+header .navigation nav .mobile-menu-container .mobile-menu li a {
+  text-decoration: none;
+  color: white;
+  font-size: 28px;
+}
+
+header .navigation nav .mobile-menu-container .mobile-menu-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header .navigation nav .mobile-menu-container .mobile-menu-header .mobile-menu-logo img {
+  width: 80%;
 }
 
 header .navigation nav span {
